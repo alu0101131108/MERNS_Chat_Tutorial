@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const User = mongoose.model("User");
-const sha256 = require("js-sha256");
-const jwt = require("jwt-then");
+const sha256 = require("js-sha256"); // Password encription.
+const jwt = require("jwt-then"); // Authorization tokens managment.
 
 exports.register = async (req, res) => {
     // Assign variable names to req.body elements.
